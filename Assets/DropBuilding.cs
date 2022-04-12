@@ -22,6 +22,7 @@ public class DropBuilding : MonoBehaviour
         {
             Destroy(joint);
             Instantiate(Building, initialPos, Quaternion.identity);
+            Destroy(Building);
         }
     }
 }
