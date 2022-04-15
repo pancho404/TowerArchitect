@@ -11,7 +11,7 @@ public class DropBuilding : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        joint = GetComponent<SpringJoint>();
+        joint = Building.GetComponent<SpringJoint>();
         initialPos = new Vector3(0f, 4f, 0f);
     }
 
@@ -20,9 +20,8 @@ public class DropBuilding : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Destroy(joint);
+            DestroyImmediate(joint, true);
             Instantiate(Building, initialPos, Quaternion.identity);
-            Destroy(Building);
         }
     }
 }
