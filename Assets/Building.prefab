@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1767121010996409126}
   - component: {fileID: -8385809907943100936}
   - component: {fileID: -8426584114839156219}
-  - component: {fileID: 4783286962117792927}
+  - component: {fileID: 634130310237662553}
   m_Layer: 0
   m_Name: Building
   m_TagString: Untagged
@@ -150,7 +150,7 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &4783286962117792927
+--- !u!114 &634130310237662553
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,4 +162,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b92707bb8467b8c4785f0a4266c07f94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: -8385809907943100936}
+  rb: {fileID: 0}

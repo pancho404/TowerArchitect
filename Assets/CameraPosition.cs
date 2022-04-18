@@ -10,8 +10,8 @@ public class CameraPosition : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        initialPos = new Vector3(0f, 2f,-10f);
-        increasingPos = new Vector3(0f, 1f, 0f);
+        initialPos = new Vector3(0f, 1f,-18f);
+        increasingPos = new Vector3(0f, 2f, 0f);
         transform.position = initialPos;
     }
 
