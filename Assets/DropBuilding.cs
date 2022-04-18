@@ -26,7 +26,7 @@ public class DropBuilding : MonoBehaviour
             Destroy(joint);
             GameObject newBuilding = Instantiate(Building, initialPos, Quaternion.identity);
             joint = newBuilding.GetComponent<SpringJoint>();
-            initialPos += increasingPos;
+            initialPos += increasingPos;            
         }
     }
 }
