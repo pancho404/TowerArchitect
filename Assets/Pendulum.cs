@@ -12,7 +12,7 @@ public class Pendulum : MonoBehaviour
     void Start()
     {
         initialPos = new Vector3(0f, 6f, 0f);
-        increasingPos = new Vector3(0f, 1.8f, 0f);
+        increasingPos = new Vector3(0f, 1.5f, 0f);
         transform.position = initialPos;
     }
 

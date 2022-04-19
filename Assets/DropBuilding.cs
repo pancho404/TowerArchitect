@@ -6,7 +6,6 @@ public class DropBuilding : MonoBehaviour
 {
     [SerializeField] private GameObject Building;
     [SerializeField] private Rigidbody connectedRb;
-   // [SerializeField] private Rigidbody rb;
     private Vector3 initialPos;
     private HingeJoint joint;
     private Vector3 increasingPos;
@@ -15,7 +14,7 @@ public class DropBuilding : MonoBehaviour
     void Start()
     {
         initialPos = new Vector3(0f, 4f, 0f);
-        increasingPos = new Vector3(0f, 1.8f, 0f); ;
+        increasingPos = new Vector3(0f, 1.5f, 0f);
         SpawnBuilding();
     }
 
@@ -30,7 +29,7 @@ public class DropBuilding : MonoBehaviour
         }        
     }
 
-    void SpawnBuilding()
+    public void SpawnBuilding()
     {
         GameObject newBuilding = Instantiate(Building, initialPos, Quaternion.identity);
         joint = newBuilding.GetComponent<HingeJoint>();
