@@ -7,14 +7,14 @@ public class CameraPosition : MonoBehaviour
     private Vector3 initialPos;
     private Vector3 increasingPos;
     [SerializeField] GameObject crane;
-    private Vector3 cameraOffset = new Vector3(0f, -0f, -8f);
+    private Vector3 cameraOffset = new Vector3(0f, -0f, -9f);
 
 
     // Start is called before the first frame update
     void Start()
     {
-        initialPos = new Vector3(0f, 1f,-8f);
-        increasingPos = new Vector3(0f, 2f, 0f);
+        initialPos =  crane.transform.position + cameraOffset;
+        increasingPos = new Vector3(0f, 1.5f, 0f);
         transform.position = initialPos;
     }
 

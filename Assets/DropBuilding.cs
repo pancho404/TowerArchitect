@@ -25,14 +25,17 @@ public class DropBuilding : MonoBehaviour
         {
             Destroy(joint);
             initialPos += increasingPos;
-            SpawnBuilding();                      
+            //SpawnBuilding();                      
+           
         }        
     }
 
     public void SpawnBuilding()
     {
         GameObject newBuilding = Instantiate(Building, initialPos, Quaternion.identity);
+        newBuilding.GetComponent<OnCollision>().dropBuilding = this;
         joint = newBuilding.GetComponent<HingeJoint>();
         joint.connectedBody = connectedRb;
+        
     }
 }
