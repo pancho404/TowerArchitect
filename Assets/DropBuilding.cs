@@ -25,8 +25,6 @@ public class DropBuilding : MonoBehaviour
         {
             Destroy(joint);
             initialPos += increasingPos;
-            //SpawnBuilding();                      
-           
         }        
     }
 
