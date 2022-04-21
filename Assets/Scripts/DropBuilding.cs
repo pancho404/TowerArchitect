@@ -6,9 +6,10 @@ public class DropBuilding : MonoBehaviour
 {
     [SerializeField] private GameObject Building;
     [SerializeField] private Rigidbody connectedRb;
+    [SerializeField] private Transform spawnPoint;
     private Vector3 initialPos;
-    private HingeJoint joint;
     private Vector3 increasingPos;
+    private HingeJoint joint;
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +34,6 @@ public class DropBuilding : MonoBehaviour
         GameObject newBuilding = Instantiate(Building, initialPos, Quaternion.identity);
         newBuilding.GetComponent<OnCollision>().dropBuilding = this;
         joint = newBuilding.GetComponent<HingeJoint>();
-        joint.connectedBody = connectedRb;
-        
+        joint.connectedBody = connectedRb;        
     }
 }

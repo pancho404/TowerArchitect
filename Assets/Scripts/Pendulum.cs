@@ -24,6 +24,7 @@ public class Pendulum : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             transform.position += increasingPos;
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 }
